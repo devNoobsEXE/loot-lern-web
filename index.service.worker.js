@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1794508492|1992831';
+const CACHE_VERSION = '1794509993|2160352';
 /** @type {string} */
 const CACHE_PREFIX = 'Loot & Lern-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
