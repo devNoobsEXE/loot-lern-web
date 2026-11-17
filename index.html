@@ -17,9 +17,15 @@ html, body, #canvas {
 	border: 0;
 }
 
+/* Seitenhintergrund = dunkle Löschfarbe der App (project.godot default_clear_color), damit ein Streifen, den das Bild nicht abdeckt,
+   nicht auffällt (Till, 2026-11-18: "unten ist ein grüner Streifen"). Die grüne Fläche gehört nur zur Lade-Ansicht (#status). */
+html {
+	background-color: #120d17;
+}
+
 body {
 	color: white;
-	background-color: #8dbf9a;
+	background-color: #120d17;
 	overflow: hidden;
 	touch-action: none;
 }
@@ -188,7 +194,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":922656,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":923920,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
